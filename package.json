@@ -1,34 +1,35 @@
 {
-  "name": "stripeClone",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "parcel src/index.html",
-    "format": "prettier \"src/**/*.{js,html}\" --write",
-    "dev:mock": "cross-env PET_MOCK=mock npm run dev",
-    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.14.6",
-    "@babel/preset-react": "^7.14.5",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.30.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.24.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "parcel-bundler": "^1.12.5",
-    "prettier": "^2.3.2"
-  },
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-icons": "^4.2.0"
-  }
+	"name": "stripeClone",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "parcel build index.html",
+		"dev": "parcel src/index.html",
+		"format": "prettier \"src/**/*.{js,html}\" --write",
+		"dev:mock": "cross-env PET_MOCK=mock npm run dev",
+		"lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.14.6",
+		"@babel/preset-react": "^7.14.5",
+		"babel-eslint": "^10.1.0",
+		"eslint": "^7.30.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-import": "^2.23.4",
+		"eslint-plugin-jsx-a11y": "^6.4.1",
+		"eslint-plugin-react": "^7.24.0",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"parcel-bundler": "^1.12.5",
+		"prettier": "^2.3.2"
+	},
+	"dependencies": {
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-icons": "^4.2.0"
+	}
 }
