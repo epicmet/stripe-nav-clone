@@ -5,7 +5,14 @@ import Sidebar from "./Sidebar";
 import Submenu from "./Submenu";
 
 const App = () => {
-	return <h1>hey u</h1>;
+	return (
+		<>
+			<Navbar />
+			<Sidebar />
+			<Hero />
+			<Submenu />
+		</>
+	);
 };
 
 export default App;
