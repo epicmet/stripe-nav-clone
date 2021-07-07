@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./images/logo.svg";
 import { FaBars } from "react-icons/fa";
+import sublinks from "./data";
 import { useGlobalContext } from "./context";
 
 const Navbar = () => {
@@ -19,7 +20,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className="nav" onMouseOver={closeHandler}>
+		<nav className="nav" onMouseOver={closeHandler} onFocus={closeHandler}>
 			<div className="nav-center">
 				<div className="nav-header">
 					<img src={logo} className="nav-logo" alt="stipe" />
@@ -28,21 +29,20 @@ const Navbar = () => {
 					</button>
 				</div>
 				<ul className="nav-links">
-					<li>
-						<button className="link-btn" onMouseOver={displaySubmenu}>
-							products
-						</button>
-					</li>
-					<li>
-						<button className="link-btn" onMouseOver={displaySubmenu}>
-							developers
-						</button>
-					</li>
-					<li>
-						<button className="link-btn" onMouseOver={displaySubmenu}>
-							company
-						</button>
-					</li>
+					{sublinks.map((sublink, index) => {
+						const { page } = sublink;
+						return (
+							<li key={index}>
+								<button
+									className="link-btn"
+									onMouseOver={displaySubmenu}
+									onFocus={displaySubmenu}
+								>
+									{page}
+								</button>
+							</li>
+						);
+					})}
 				</ul>
 				<button className="btn signin-btn">Sign in</button>
 			</div>
